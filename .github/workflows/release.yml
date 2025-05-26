@@ -26,7 +26,7 @@ jobs:
       - name: Install Windows dependencies
         shell: msys2 {0}
         run: |
-          pacman -S --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL2 mingw-w64-x86_64-go
+          pacman -Sy --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL2 mingw-w64-x86_64-go git
           export GOROOT=/mingw64/lib/go
           export GOPATH=/mingw64
 
