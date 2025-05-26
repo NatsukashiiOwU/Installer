@@ -45,7 +45,7 @@ var (
 
 	acceptedOpenAsar   bool
 	showedUpdatePrompt bool
-
+	VencordAsarPath = path.Join(os.Getenv("APPDATA"), "Discord", "modules", "discord_desktop_core", "app.asar")
 	win *g.MasterWindow
 )
 
