@@ -54,6 +54,18 @@ var iconBytes []byte
 
 func init() {
 	LogLevel = LevelDebug
+
+	if dir := os.Getenv("VENCORD_USER_DATA_DIR"); dir != "" {
+		Log.Debug("Using VENCORD_USER_DATA_DIR")
+		BaseDir = dir
+	} else if dir = os.Getenv("DISCORD_USER_DATA_DIR"); dir != "" {
+		Log.Debug("Using DISCORD_USER_DATA_DIR/../VencordData")
+		BaseDir = path.Join(dir, "..", "VencordData")
+	} else {
+		Log.Debug("Using UserConfig")
+		BaseDir = appdir.New("Vencord").UserConfig()
+	}
+	VencordAsarPath = path.Join(BaseDir, "vencord.asar")
 }
 
 func main() {
