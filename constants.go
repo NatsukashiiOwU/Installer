@@ -13,7 +13,7 @@ import (
 
 const ReleaseUrl = "https://api.github.com/repos/NatsukashiiOwU/Vencord/releases/latest"
 const ReleaseUrlFallback = "https://github.com/NatsukashiiOwU/Vencord/releases/latest/download/Vencord.js"
-const InstallerReleaseUrl = "https://api.github.com/repos/Vencord/Installer/releases/latest"
+const InstallerReleaseUrl = "https://api.github.com/repos/NatsukashiiOwU/Installer/releases/latest"
 const InstallerReleaseUrlFallback = "https://vencord.dev/releases/installer"
 
 var UserAgent = "VencordInstaller/" + buildinfo.InstallerGitHash + " (https://github.com/NatsukashiiOwU/Installer)"
