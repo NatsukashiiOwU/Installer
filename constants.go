@@ -11,8 +11,8 @@ import (
     "vencordinstaller/buildinfo"
 )
 
-const ReleaseUrl = "https://api.github.com/repos/NatsukashiiOwU/Vencord/releases/tags/natsukashii-vencord-dev"
-const ReleaseUrlFallback = "https://github.com/NatsukashiiOwU/Vencord/releases/download/natsukashii-vencord-dev/Vencord.js"
+const ReleaseUrl = "https://api.github.com/repos/NatsukashiiOwU/Vencord/releases/latest"
+const ReleaseUrlFallback = "https://github.com/NatsukashiiOwU/Vencord/releases/latest/download/Vencord.js"
 const InstallerReleaseUrl = "https://api.github.com/repos/Vencord/Installer/releases/latest"
 const InstallerReleaseUrlFallback = "https://vencord.dev/releases/installer"
 
